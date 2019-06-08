@@ -1,5 +1,5 @@
-// fromCharCode  =   буквы -> юникод
-// charCodeAt    =  юникод -> буквы
+// charCodeAt - возвращает unicode    A (sym)       =  65 (unicode)
+// fromCharCode - наоборот            65 (unicode)  =  A (sym)
 
 document.getElementById('input-sentence').oninput = function() {
     const offset = 3;
@@ -12,7 +12,7 @@ document.getElementById('input-sentence').oninput = function() {
         out += String.fromCharCode(code);
     }
 
-    document.getElementById('output-unicode').innerHTML = out;
+    document.getElementById('output-unicode').innerHTML = out.split('#').join('a');
 }
 
 document.getElementById('input-unicode').oninput = function() {
