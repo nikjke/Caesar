@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Шифр Цезаря</title>
+        <style>
+            textarea {
+                width: 47%;
+                height: 100px;
+                margin-right: 20px;
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <span id="help-for-write">Введите текст для шифрования:</span><br>
+            <textarea id="input-sentence" autofocus></textarea>
+            <textarea id="output-unicode" disabled></textarea>
+            <br>
+            <hr>
+            <span id="help-for-code">Введите код для дешифрирования:</span><br>
+            <textarea id="input-unicode"></textarea>
+            <textarea id="output-sentence"disabled></textarea>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
